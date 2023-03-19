@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#template-container1{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: azure;
+}
+.template-content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.template-content1 .logo i{
+    padding-right: 10px;
+    font-size: 2rem;
+}
+.template-content1 .logo p{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.template-content1 .logo span{
+    font-weight: 700;
+}
+.template-content1 .social i{
+    color: rgba(128, 128, 128, 0.7);
+}
+.template-content1 .social li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.9rem;
+}
+
+.template-content1 .social i:hover{
+    color: peru;
+}
+
+.banner-container{
+    max-width: 100%;
+}
+.banner-content{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/akshay-nanavati-8FevUlxdZC0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-content p{
+    padding: 50px;
+    height: 100%;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.template-text-container{
+    padding: 40px 0px;
+}
+.template-text-container h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+}
+.template-text-container p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 28px;
+}
+.template-text-container .btn input{
+    padding: 10px 20px;
+    background-color: rgba(112, 128, 144, 0.5);
+    color: whitesmoke;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.template-text-container .btn input:hover{
+    background-color: rgba(112, 128, 144, 0.8);
+    color: black;
+    cursor: pointer;
+}
+
+.contact-address{
+    text-align: center;
+}
+.contact-address i{
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+.contact-address .logo-footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.contact-address .logo-footer span{
+    font-weight: 700;
+}
+.contact-address p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+/* Media */
+@media screen and (max-width: 769px){
+    .template-content1{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-content p{
+        padding: 10px;
+        height: 100%;
+        color: aliceblue;
+        font-family: Arial, sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
